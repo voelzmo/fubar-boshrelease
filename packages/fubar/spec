@@ -1,5 +1,5 @@
 ---
 name: fubar
-dependencies: []
+dependencies: [golang1.6]
 files:
 - fubar/*.go
