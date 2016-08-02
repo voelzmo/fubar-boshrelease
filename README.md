@@ -33,6 +33,14 @@ cd fubar-boshrelease
 bosh create release --force && bosh upload release
 ```
 
+## Install prerequisites
+
+Install spruce
+```
+$ brew tap starkandwayne/cf
+$ brew install spruce
+```
+
 Now, you can create the manifest, and attempt to deploy it.
 
 ```
