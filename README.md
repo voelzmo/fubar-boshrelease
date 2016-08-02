@@ -21,6 +21,17 @@ regarding bugs in the release, or upload new blobs to the blobstore. That said,
 we will happily welcome any PRs with the goal of helping the end-user learn more about
 BOSH troubleshooting, or tweaks to help identify the bugs more quickly/accurately.
 
+
+## Install prerequisites
+
+Install [bosh-lite](https://github.com/cloudfoundry/bosh-lite)
+
+Install spruce
+```
+$ brew tap starkandwayne/cf
+$ brew install spruce
+```
+
 ## Usage
 
 Since this BOSH release has no final builds, you will need to create a dev build
@@ -31,14 +42,6 @@ bosh target BOSH_HOST
 git clone https://github.com/cloudfoundry-community/fubar-boshrelease.git
 cd fubar-boshrelease
 bosh create release --force && bosh upload release
-```
-
-## Install prerequisites
-
-Install spruce
-```
-$ brew tap starkandwayne/cf
-$ brew install spruce
 ```
 
 Now, you can create the manifest, and attempt to deploy it.
