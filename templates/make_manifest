@@ -11,7 +11,7 @@ fail() {
 	echo >&2 $*
 }
 
-if [[ "$infrastructure" != "aws-ec2" && "$infrastructure" != "bosh-lite" ]] ; then
+if [[ "$infrastructure" != "aws-ec2" && "$infrastructure" != "warden" ]] ; then
   echo "Invalid infrastructure: ${infrastructure} at line 14"
   fail "usage: make_manifest <aws-ec2|warden>"
   exit 1
