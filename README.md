@@ -44,8 +44,9 @@ $ brew install spruce
 Now, you can create the manifest, and attempt to deploy it.
 
 ```
-templates/make_manifest warden
-bosh -n deploy
+$ ./templates/make_manifest warden
+$ bosh deployment tmp/fubar-warden-manifest.yml
+$ bosh deploy
 ```
 
 Once deployment is successful, you'll be able to `curl http://10.244.54.2`, and receive
