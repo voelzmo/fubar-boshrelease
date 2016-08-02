@@ -1,6 +1,6 @@
 ---
 name: fubar
-packages: []
+packages: [fubar]
 templates:
   bin/ctl: bin/ctl
   bin/monit_debugger: bin/monit_debugger
@@ -11,4 +11,3 @@ properties:
   fubar.port:
     default: 8080
     description: "Port that fubar will listen on"
-
