@@ -1,7 +1,7 @@
 set -e -x
 
 echo "Extracting pcre..."
-tar xzvf nginx/pcre-8.37
+tar xzvf nginx/pcre-8.37.tar.gz
 
 echo "Extracting nginx..."
 tar xzvf nginx/nginx-1.8.0.tar.gz
