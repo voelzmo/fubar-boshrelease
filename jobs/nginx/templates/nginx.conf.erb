@@ -38,7 +38,7 @@ http {
 
   upstream fubar {
 <% p("nginx.backend_servers").each do |server| %>
-  server <%= server %>:80<%# p("nginx.backend_port") %>;
+  server <%= server %>:<%= p("nginx.backend_port") %>;
 <% end %>
   }
 
