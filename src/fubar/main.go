@@ -9,7 +9,7 @@ import (
 
 func main() {
 	http.HandleFunc("/", func(res http.ResponseWriter, req *http.Request) {
-		res.Write([]byte("Not so fast, I'm still broken :(\n"))
+		res.Write([]byte("You win!\n"))
 	})
 	port := "8080"
 	if os.Getenv("FUBAR_PORT") != "" {
